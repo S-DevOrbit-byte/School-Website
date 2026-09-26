@@ -26,6 +26,7 @@ app.use("/api/notices", noticeRoutes);
 app.use("/api/events", eventRoutes);
 
 app.get("/api/health", (req, res) => res.json({ success: true, message: "Server is running." }));
+app.get("/", (req, res) => res.json({ success: true, message: "API is running." }));  
 
 // --- 404 handler ---
 app.use((req, res) => {
