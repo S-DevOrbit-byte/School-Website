@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>School Website</title>
+  <link rel="stylesheet" href="css/stylefin.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="subheader">
+        <nav>
+            <a href="6_events.html"> <img src="images/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                    
+                    <li> <a href="admin-login.html" class="hero-btn" style="color: #FFFFFF !important;">ADMIN</a></li>
+                </ul>
+                <ul>
+                    <li> <a href="1_index.html">HOME</a></li>
+                    <li> <a href="2_about.html">ABOUT</a></li>
+                    <li> <a href="3_principle_msg.html">LEADERSHIP MESSAGES</a></li>
+                    <li> <a href="4_facilities.html">FACILITIES</a></li>
+                    <li> <a href="5_academics.html">ACADEMICS</a></li>
+                    <li> <a href="6_events.html">SCHOOL GALLERY</a></li>
+                     <li> <a href="7_notice.html">NOTICE BOARD</a></li>
+                    <li> <a href="contact_us.html">CONTACT US</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <!--SCHOOL GALLERY-->
+        <h1>SCHOOL'S GALLERY</h1>
+
+    </section>
+<section class="container">
+    <div class="section-header">
+      <h1 class="section-title">School's Event Gallery</h1>
+      <p class="section-subtitle">A glimpse into the events, activities, and achievements that make our school life special.</p>
+      
+      <div class="divider">
+        <div class="divider-line"></div>
+        <div class="divider-icon">
+             <i class="fa fa-trophy"></i>
+        </div>
+        <div class="divider-line"></div>
+      </div>
+    </div>
+    </section>
+    <main>
+        <div id="event-tags" class="event-tags"></div>
+        <div id="event-list">...</div>
+    </main>
+    <main>
+        <div id="event-list">
+          <p class="loading-state"></p>
+        </div>
+      </main>
+  
+
+<section class="cs">
+
+        <div class="line"></div>
+        <div class="csfoot">
+            <div class="foot-left">
+
+                <h2>FOR MORE INFORMATION</h2>
+                <br>
+                <a href="contact_us.html" class="contact-btn">CONTACT US</a>
+            </div>
+            <div class="info">
+                <h3>Contact</h3>
+                <p>9960776960</p>
+                <p>mohsinahmedschool@gmail.com</p>
+            </div>
+            <div class="address">
+                <h3> Address</h3>
+                <p>Mohsin Ahmed Urdu Primary School, Basheer Colony, Roshan Gate,
+                <p>
+                </p> Aurangabad, Maharashtra, India. Pin-code : 431001.</p>
+            </div>
+
+        </div>
+    </section>
+ <footer>&copy; <span id="year"></span> School Notice Board</footer>
+
+ <script src="script.js"></script>
+  <script src="js/config.js"></script>
+  <script src="js/events-public.js"></script>
+</body>
+</html>

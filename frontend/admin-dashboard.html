@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin Dashboard - Notice Board</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav>
+            <a href="admin-dashboard.html"> <img src="images/logo.png" style="
+    width: 100px";></a>
+    </nav>
+    <h1> Admin Dashboard</h1>
+  </header>
+
+  <nav class="top-nav">
+    
+    <a href="#" id="logout-link">Logout</a>
+  </nav>
+
+  <main>
+    <div class="card">
+      <h2>Add New Notice</h2>
+      <form id="notice-form">
+        <div>
+          <label for="title">Title</label>
+          <input type="text" id="title" name="title" maxlength="150" required />
+        </div>
+        <div>
+          <label for="description">Description</label>
+          <textarea id="description" name="description" maxlength="2000" required></textarea>
+        </div>
+        <p id="form-message" class="form-message"></p>
+        <button type="submit" class="btn-primary" id="add-btn">Add Notice</button>
+      </form>
+    </div>
+
+    <div class="dashboard-header">
+      <h2 style="margin:0;">Existing Notices</h2>
+    </div>
+    <div id="notice-list">
+      <p class="loading-state">Loading notices...</p>
+    </div>
+    <hr style="margin: 40px 0; border: none; border-top: 1px solid var(--border);" />
+
+    <div class="card">
+      <h2>Add New Event</h2>
+      <form id="event-form">
+        <div>
+          <label for="event-title">Title</label>
+          <input type="text" id="event-title" name="title" maxlength="150" required />
+        </div>
+        <div>
+          <label for="event-description">Description</label>
+          <textarea id="event-description" name="description" maxlength="2000" required></textarea>
+        </div>
+        <div>
+          <label for="event-date">Date &amp; Time</label>
+          <input type="datetime-local" id="event-date" name="date" required />
+        </div>
+        <div>
+          <label for="event-location">Location (optional)</label>
+          <input type="text" id="event-location" name="location" maxlength="200" placeholder="e.g. School Auditorium" />
+        </div>
+        <div>
+          <label for="event-images">Image URLs (optional, comma-separated)</label>
+          <textarea id="event-images" name="images" placeholder="https://example.com/photo1.jpg, https://example.com/photo2.jpg"></textarea>
+        </div>
+        <p id="event-form-message" class="form-message"></p>
+        <button type="submit" class="btn-primary" id="event-add-btn">Add Event</button>
+      </form>
+    </div>
+
+    <div class="dashboard-header">
+      <h2 style="margin:0;">Existing Events</h2>
+    </div>
+    <div id="event-list">
+      <p class="loading-state">Loading events...</p>
+    </div>
+  </main>
+
+  <script src="js/config.js"></script>
+   <script src="js/admin-events.js"></script>
+  <script src="js/dashboard.js"></script>
+</body>
+</html>
